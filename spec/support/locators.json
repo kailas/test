@@ -1,0 +1,223 @@
+{
+    "Common": {
+        "labels": {
+            "pageTitle": {"className": "ttMainContentHeadline"},
+            "pageSubTitle": {"css": ".ttMainContentMiddleInfoMessageInfo span"},
+            "modalWindowTitle": {"css": "div.ttDataGridHeadlineCenter > span"},
+            "expanderTitle": {"css": ".expander-header .title"},
+            "smartSearchDialogTitle": {"css": ".ui-dialog-title"}
+        },
+        "fields": {
+            "modalWindowText": {"css": ".content"},
+            "expanderFilter": {"css": "[name=filter]"},
+            "expanderContentContainer": {"css": ".expander-content"},
+            "expanderContentRowsContainer": {"css": ".dpct-table tbody"},
+            "expanderContentRows": {"css": ".dpct-table tbody tr"},
+            "expanderFilter": {"css": ".expander-header [name=filter]"},
+            "expanderContentRowsByName": {"xpath": ".//td[text()='{{name}}']/.."},
+            "smartSearchReadViewContainer": {"css": ".search-widget"},
+            "smartSearchDialogFilter": {"css": ".ui-autocomplete-input"},
+            "smartSearchDialogSearchResultsContainer": {"css": "._i > ul"},
+            "smartSearchDialogSearchResultItem": {"xpath": "li[@class='ui-menu-item']/div/h4[text()='{{filter}}']/../.."},
+            "smartSearchDialogSelectedContainer": {"css": "._s"},
+            "smartSearchDialogSelectedElement": {"css": "span.active"},
+            "legacyMultiSelectDialogOptions": {"css": ".select-items [type='checkbox']"}
+        },
+        "elements": {
+            "modalWindow": {"className": "dpct-modal-window"},
+            "smartSearchDialog": {"xpath": "//*[@role='dialog']//span[@class='ui-dialog-title'][text()='{{title}}']/../.."},
+            "loader": {"css": ".dpct-global-loader"},
+            "legacyMultiSelectDialog": {"css": ".dpct-multiple-select"}
+        },
+        "controls": {
+            "modalWindowButtons": {"css": "div.dpct-modal-window > div.ttDataGridFooter a"},
+            "modalWindowCancel": {"css": "div.dpct-modal-window > div.ttDataGridFooter a:nth-child(1)"},
+            "modalWindowConfirm": {"css": "div.dpct-modal-window > div.ttDataGridFooter a:nth-child(2)"},
+            "expanderContentAddButton": {"css": ".dpct-table tfoot .dpct-add-button"},
+            "vitoSelect": {"css": "#dpct-select-vito"},
+            "deleteButton": {"css": ".dpct-delete-button"},
+            "editButton": {"css": ".dpct-edit-button"},
+            "smartSearchDialogClose": {"css": ".ui-dialog-buttonset > .ui-button"},
+            "legacyMultiSelectDialogSelectAll": {"css": "#dpct-ms-select-all"},
+            "legacyMultiSelectDialogClose": {"css": "[role='button']"},
+            "vitoSelect": {"css": "#dpct-select-vito"}
+        }
+    },
+    "Login": {
+        "labels": {},
+        "fields": {
+            "login": {"id": "loginUser"},
+            "password": {"id": "loginPassword"}
+        },
+        "controls": {
+            "loginButton": {"className": "ttMainButtonCenterNormal"},
+            "logoutButton": {"className": "ttMainContentLogout"}
+        }
+    },
+    "Content": {
+        "Steering": {
+            "fields": {
+                "defaultTable": {"className": "dpct-portfolio-default-list-wide"},
+                "providersTable": {"css": ".provider-settings-table > table"}
+            }
+        },
+        "Groups": {
+            "labels": {},
+            "fields": {
+                "generalFilter": {"css": ".top-filter input"},
+                "destinationLevelExpander": {"css": ".tab-pane > .content-groups > div:nth-of-type(2)"},
+                "destinationDepartureLevelExpander": {"css": ".tab-pane > .content-groups > div:nth-of-type(3)"}
+            },
+            "controls": {}
+        },
+        "Group": {
+            "labels": {
+                "nameError": {"css": "label[for=cg-name].error"},
+                "filterIsMissingError": {"css": "#errorLevel"}
+            },
+            "fields": {
+                "name": {"css": "#cg-name"},
+                "description": {"css": "#cg-description"},
+                "flightProviders": {"css": "#providerId"},
+                "flightCategory": {"css": "#flightCategory"},
+                "fareType": {"css": "#fareType"},
+                "taxZone": {"css": "#taxZone"},
+                "country": {"css": "#countryId"},
+                "flightLength": {"css": "#flightLength"},
+                "destinationIATA": {"css": "#destinationIATA"},
+                "departureIATA": {"css": "[data-bindattr=departureIATA]"}
+            },
+            "elements": {},
+            "controls": {
+                "saveButton": {"css": "#saveCG"},
+                "cancelButton": {"css": "#backCG"}
+            }
+        },
+        "Rules": {
+            "divs": {
+                "destinationLevelExpander": {"css": ".tab-pane > .rules > div:nth-of-type(1)"},
+                "destinationDepartureLevelExpander": {"css": ".tab-pane > .rules > div:nth-of-type(2)"},
+                "table": {"css": ".expander-content > .dpct-table.rules"}
+            },
+            "labels": {
+                "name": {"css": "td:nth-of-type(1)"},
+                "description": {"css": "td:nth-of-type(2)"},
+                "priority": {"css": "td:nth-of-type(4)"},
+                "contentGroup": {"css": "td:nth-of-type(5)"},
+                "travelPeriods": {"css": "td:nth-of-type(6)"},
+                "activeEnabled": {"css": "td:nth-of-type(3) span[class=checkmark-checked]"},
+                "packagedEnabled": {"css": "td:nth-of-type(7) span[class=checkmark-checked]"}
+            },
+            "fields": {
+                "name": {"id": "name"},
+                "description": {"id": "description"},
+                "priority": {"id": "priority"},
+                "contentGroup": {"id": "contentGroup"},
+                "travelPeriods": {"css": ".dpct-form-row > input[name=travelPeriods]"},
+                "activeCheckbox": {"id": "active"},
+                "packagedCheckbox": {"id": "packaging"}
+            },
+            "controls": {
+                "createButton": {"css": "tfoot .dpct-add-button"},
+                "editButton": {"css": ".dpct-edit-button"},
+                "deleteButton": {"css": ".dpct-delete-button"}
+            },
+            "warnings": {
+              "name": {"css": ".dpct-form-row > label[class=error][for=dpct-tp-create-name]"},
+              "contentGroup": {"css": ".dpct-form-row > label[class=error][for=startDate]"},
+              "travelPeriods": {"css": ".dpct-form-row > label[class=error][for=sourceId]"}
+            },
+            "widget": {
+                "travelPeriods": {
+                    "selectAll": {"css": ".dpct-multiple-select > .select-all > input"},
+                    "selectItems": {"css": ".dpct-multiple-select > .select-items"},
+                    "confirmButton": {"css": ".dpct-multiple-select > .footer > a"}
+                }
+            }
+        }
+    },
+    "Margins": {
+        "Rules": {
+            "labels": {
+                "nameError": {"css": "label[for=name].error"},
+                "marginGroupError": {"css": "label[for=marginGroup].error"},
+                "travelPeriodsError": {"css": "label[for=travelPeriods].error"},
+                "relativeMarginError": {"css": "label[for=relativeMargin].error"},
+                "secondFixedMarginError": {"css": "label[for=secondFixedMargin].error"}
+            },
+            "fields": {
+                "name": {"css": "#name"},
+                "description": {"css": "#description"},
+                "active": {"css": "#active"},
+                "priority": {"css": "#priority"},
+                "marginGroup": {"css": "#marginGroup"},
+                "travelPeriods": {"css": "[data-bindattr='travelPeriods']"},
+                "relativeMargin": {"css": "#relativeMargin"},
+                "secondFixedMargin": {"css": "#secondFixedMargin"}
+            }
+        }
+    },
+    "Settings": {
+        "General": {
+            "labels": {},
+            "fields": {
+                "providerTable": {"className": "dpct-providers-list"}
+            },
+            "controls": {
+                "releaseDaySelect": {"css": ".dpct-providers-list tr:nth-child(1) > td:nth-child(2) > #releaseDays"},
+                "confirmActiveYes": {"css": "div.dpct-modal-window > div.ttDataGridFooter a:nth-child(2)"},
+                "confirmActiveCancel": {"css": "div.dpct-modal-window > div.ttDataGridFooter a:nth-child(1)"},
+                "filterField": {"css": ".value.providers.filter"}
+            }
+        },
+        "Addresses": {
+            "labels": {},
+            "fields": {
+                "addressTable": {"className": "dpct-addresses-list"},
+                "addressForm": {"className": "dpct-address-form"}
+            },
+            "controls": {
+                "editButton": {"className": "dpct-edit-button edit-address"},
+                "editButtonReadOnly": {"className": "dpct-edit-button edit-address readonly"},
+                "deleteButton": {"className": "dpct-delete-button delete-address"},
+                "deleteButtonReadOnly": {"className": "dpct-delete-button delete-address readonly"},
+                "addAddress": {"className": "dpct-add-button add-address"},
+                "addAddressReadOnly": {"className": "dpct-add-button add-address readonly"},
+                "buttonSubmit": {"css": "#buttonSubmit > .ttMainButtonCenterNormal"},
+                "buttonCancel": {"css": "#buttonCancel > .ttMainButtonCenterNormal"}
+            }
+        }
+    },
+    "Configurations": {
+        "TravelPeriods": {
+            "divs": {
+                "table": {"css": ".dpct-travel-periods .dpct-table.dpct-travel-periods-list"},
+                "infoBox": {"css": ".dpct-travel-periods > .tp-action-info-box"}
+            },
+            "fields": {
+                "creating": {
+                    "name": {"id": "dpct-tp-create-name"},
+                    "startDate": {"id": "startDate"},
+                    "copyTravelPeriod": {"css": "#sourceId"},
+                    "copyProviderLevelCheckBox": {"id": "ProviderSetting"}
+                },
+                "editing": {
+                    "nameSpan": {"css": ".data-component > span"},
+                    "nameInput": {"css": ".data-component > input"},
+                    "startDate": {"css": ".editable > input"}
+                }
+            },
+            "controls": {
+                "deleteButton": {"css": ".actions > .dpct-delete-button.delete-travel-period"},
+                "deleteButtonHidden": {"css": ".actions > .dpct-delete-button.delete-travel-period.hidden"},
+                "createButton": {"css": "tfoot .dpct-add-button.add-travel-period"},
+                "createButtonReadOnly": {"css": "tfoot .dpct-add-button.add-travel-period.readonly"}
+            },
+            "warnings": {
+                "name": {"css": ".dpct-form-row > label[class=error][for=dpct-tp-create-name]"},
+                "date": {"css": ".dpct-form-row > div > label[class=error][for=startDate]"},
+                "copyTP": {"css": ".dpct-form-row > label[class=error][for=sourceId]"}
+            }
+        }
+    }
+}

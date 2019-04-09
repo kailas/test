@@ -1,0 +1,90 @@
+{
+    "contentGroups": {
+        "de": "content gruppen",
+        "en": "content groups"
+    },
+    "marginsGroups": {
+        "de": "margen gruppen",
+        "en": "margin groups"
+    },
+    "flightContentGroup": {
+        "de": "flug Content Gruppe bearbeiten",
+        "en": "edit flight content group"
+    },
+    "flightMarginsGroup": {
+        "de": "Flug Margen Gruppe bearbeiten",
+        "en": "edit flight margin group"
+    },
+    "steeringFlightProvider": {
+        "de": "steuerung der fluganbieter",
+        "en": "steering flight provider"
+    },
+    "rules": {
+        "de": "regeln",
+        "en": "rules"
+    },
+    "notification": {
+        "de": "hinweis",
+        "en": "notification"
+    },
+    "editRule": {
+        "de": "regel bearbeiten",
+        "en": "edit rule"
+    },
+    "deleteRule": {
+        "de": "regel löschen",
+        "en": "delete rule data confirmation"
+    },
+    "generalProviderSettings": {
+        "de": "allgemeine veranstalter einstellungen",
+        "en": "general provider settings"
+    },
+    "addressProviderSettings": {
+        "de": "adressen einstellungen",
+        "en": "addresses settings"
+    },
+    "newTravelPeriod": {
+        "de": "neuer reisezeitraum",
+        "en": "new travel period"
+    },
+    "noDataFound": {
+        "de": "Keine Daten gefunden",
+        "en": "No data found"
+    },
+    "contentGroupDeleteNotification": {
+        "de": "Bitte bestätigen Sie das Löschen der Content Gruppe. Der Gruppe sind keine Regeln zugeordnet.",
+        "en": "Please confirm content group deletion. No rules are assigned to this group."
+    },
+    "marginsGroupDeleteNotification": {
+        "de": "Bitte bestätigen Sie das Löschen der Margen Gruppe. Der Gruppe sind keine Regeln zugeordnet.",
+        "en": "Please confirm margin group deletion. No rules are assigned to this group."
+    },
+    "flightProviders": {
+        "de": "Fluganbieter",
+        "en": "Flight providers"
+    },
+    "destinationIATACode": {
+        "de": "Reiseziel IATA Code",
+        "en": "Destination IATA code"
+    },
+    "departureIATACode": {
+        "de": "Abflughafen IATA Code",
+        "en": "Departure IATA code"
+    },
+    "notPossibleToChangeHierarchyLevel": {
+        "de": "Änderung der Hierarchie-Ebene nicht möglich. Bitte erstellen Sie eine neue Gruppe in der gewünschten Hierarchie-Ebene.",
+        "en": "It is not possible to change the hierarchy level. Please create a new group in the preferred hierarchy level"
+    },
+    "fieldIsRequiredError": {
+        "de": "Dieses Feld wird benötigt",
+        "en": "This field is required"
+    },
+    "valueValidationError": {
+        "de": "Bitte geben Sie einen gültigen Wert ein",
+        "en": "Please enter a valid value"
+    },
+    "pleaseCreateMarginGroup": {
+        "de": "Bitte erstellen Sie zunächst eine passende Margen Gruppe",
+        "en": "Please create a corresponding margin group first"
+    }
+}

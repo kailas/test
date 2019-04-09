@@ -1,0 +1,21 @@
+{
+  "name": "DPCT_DATAMIX_Selenium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^2.33.2",
+    "jasmine": "^2.8.0",
+    "jasmine-console-reporter": "^2.0.1",
+    "minimist": "^1.2.0",
+    "request": "^2.83.0",
+    "selenium-webdriver": "^3.6.0",
+    "underscore": "^1.8.3"
+  }
+}

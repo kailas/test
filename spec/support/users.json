@@ -1,0 +1,22 @@
+{
+    "TT_ADMIN": {
+        "login": "",
+        "password": "
+    },
+    "TT_ADMIN_": {
+        "login": "",
+        "password": ""
+    },
+    "TT_USER": {
+        "login": "",
+        "password": ""
+    },
+    "VITO_SUPERVISOR": {
+        "login": "",
+        "password": ""
+    },
+    "VITO_USER": {
+        "login": "",
+        "password": ""
+    }
+}
